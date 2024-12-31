@@ -1,84 +1,133 @@
-# AlphaCare Insurance Analysis
+# Weekly Project Tasks
 
-This repository hosts the code and data for analyzing AlphaCare Insurance data. The project focuses on comprehensive Exploratory Data Analysis (EDA) and utilizes Data Version Control (DVC) to ensure efficient tracking of data versions and reproducibility.
+This README outlines the tasks for the week, along with their objectives, key performance indicators (KPIs), and minimum essential steps for successful completion. The tasks are organized as follows:
 
-## Branches
-- `main`: The main branch containing the finalized and reviewed code.
-- `task-1`: A branch dedicated to the analysis performed on day 1.
-- `task-2`: A branch for subsequent tasks and analyses.
+## Task 1: Git and GitHub
 
----
+### Objectives:
+- Create a Git repository to host all project code.
+- Implement Git version control and CI/CD using GitHub Actions.
 
-## Task-1: Exploratory Data Analysis (EDA)
+### Key Performance Indicators (KPIs):
+- Dev Environment Setup.
+- Demonstrated relevant skills in version control and project management.
 
-### Steps:
-1. **Data Summarization**
-   - **Descriptive Statistics**: Calculated measures such as mean, standard deviation, and variability for numerical features (e.g., `TotalPremium`, `TotalClaim`).
-   - **Data Structure**: Reviewed and confirmed data types for all columns.
-
-2. **Data Quality Assessment**
-   - Checked for and documented missing values.
-
-3. **Univariate Analysis**
-   - Plotted histograms for numerical features.
-   - Used bar charts to analyze distributions of categorical columns.
-
-4. **Bivariate and Multivariate Analysis**
-   - Explored correlations between `TotalPremium` and `TotalClaims` across `ZipCode` using scatter plots and correlation matrices.
-
-5. **Data Comparison**
-   - Analyzed trends in insurance cover type, premium, and auto make over geographical locations.
-
-6. **Outlier Detection**
-   - Used box plots to detect outliers in numerical features.
-
-7. **Visualization**
-   - Created three visually appealing plots that summarize insights from the EDA.
-
----
-
-## Task-2: Data Version Control (DVC)
-
-### Steps:
-1. **Install DVC**
-   - Installed DVC using `pip install dvc`.
-
-2. **Initialize DVC**
-   - Initialized DVC in the project directory with `dvc init`.
-
-3. **Set Up Local Remote Storage**
-   - Created a local storage directory: `/path/to/your/local/storage`.
-   - Added it as a DVC remote: `dvc remote add -d localstorage /path/to/your/local/storage`.
-
-4. **Add and Track Data**
-   - Added datasets to the project directory.
-   - Tracked datasets using `dvc add <data.csv>`.
-
-5. **Commit Changes**
-   - Committed `.dvc` files (metadata about the tracked data) to the Git repository.
-
-6. **Push Data to Local Remote**
-   - Pushed tracked data to the local remote storage using `dvc push`.
-
-7. **Version Control**
-   - Created and managed different versions of the data.
+### Tasks:
+1. **Repository Setup**:
+   - Create a GitHub repository for the week.
+   - Include a detailed README.
+2. **Branch Management**:
+   - Create a branch named `task-1`.
+   - Commit changes at least three times a day with descriptive messages.
+3. **Exploratory Data Analysis (EDA)**:
+   - **Data Summarization**:
+     - Calculate descriptive statistics for features such as `TotalPremium` and `TotalClaim`.
+     - Confirm data types for categorical variables and dates.
+   - **Data Quality Assessment**:
+     - Identify missing values.
+   - **Univariate Analysis**:
+     - Plot histograms and bar charts.
+   - **Bivariate/Multivariate Analysis**:
+     - Analyze correlations between variables such as `TotalPremium` and `TotalClaims` by `ZipCode`.
+   - **Visualization**:
+     - Produce three insightful and visually appealing plots.
+   - **Outlier Detection**:
+     - Use box plots to detect outliers.
+4. **CI/CD Integration**:
+   - Set up a GitHub Actions workflow for CI/CD.
 
 ---
 
-## Repository Guidelines
+## Task 2: Data Version Control (DVC)
 
-- Commit code changes at least three times daily with descriptive messages.
-- Use Pull Requests (PRs) to merge changes into the `main` branch.
+### Objectives:
+- Use DVC for efficient and scalable data management.
+
+### Key Performance Indicators (KPIs):
+- Properly configured local remote storage.
+- Versioned data managed effectively.
+
+### Tasks:
+1. **Environment Setup**:
+   - Install DVC (`pip install dvc`).
+   - Initialize DVC in the project directory (`dvc init`).
+2. **Remote Storage Configuration**:
+   - Create a local storage directory (`mkdir /path/to/your/local/storage`).
+   - Add the storage as a DVC remote (`dvc remote add -d localstorage /path/to/your/local/storage`).
+3. **Data Management**:
+   - Track datasets with DVC (`dvc add <data.csv>`).
+   - Commit `.dvc` files to the Git repository.
+   - Push data to the local remote (`dvc push`).
+4. **Branch Management**:
+   - Create a branch named `task-2`.
+   - Commit changes with descriptive messages.
+5. **Branch Merge**:
+   - Merge `task-1` into `main` via Pull Request (PR).
 
 ---
 
-## Prerequisites
+## Task 3: A/B Hypothesis Testing
 
-1. Clone this repository:
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   
-2. **Install the required dependencies**
-   ```bash
-    pip install -r requirements.txt
+### Objectives:
+- Validate hypotheses using statistical testing.
+
+### Key Performance Indicators (KPIs):
+- Effective hypothesis testing and interpretation.
+- Evidence-backed decision-making.
+
+### Tasks:
+1. **Branch Management**:
+   - Create a branch named `task-3`.
+   - Commit changes with descriptive messages.
+2. **Hypothesis Testing**:
+   - Null Hypotheses:
+     - No risk differences across provinces.
+     - No risk differences between zip codes.
+     - No significant profit margin differences between zip codes.
+     - No significant risk differences between women and men.
+   - Select KPIs and segment data into control (Group A) and test (Group B).
+   - Conduct statistical tests (e.g., chi-squared, t-tests, z-tests).
+   - Analyze p-values to accept or reject hypotheses.
+3. **Analysis and Reporting**:
+   - Document findings and insights.
+   - Interpret results within a business context.
+4. **Branch Merge**:
+   - Merge `task-2` into `main` via PR.
+
+---
+
+## Task 4: Statistical Modeling
+
+### Objectives:
+- Build and evaluate predictive models for `TotalPremium` and `TotalClaims`.
+
+### Key Performance Indicators (KPIs):
+- Effective model building and evaluation.
+- Insightful feature importance analysis.
+
+### Tasks:
+1. **Branch Management**:
+   - Create a branch named `task-4`.
+   - Commit changes with descriptive messages.
+2. **Data Preparation**:
+   - Handle missing data.
+   - Engineer new features.
+   - Encode categorical variables.
+   - Split data into training and testing sets (e.g., 80:20 ratio).
+3. **Model Building**:
+   - Implement Linear Regression, Random Forest, and XGBoost.
+4. **Model Evaluation**:
+   - Evaluate models using metrics like accuracy, precision, recall, and F1-score.
+5. **Feature Importance**:
+   - Use SHAP or LIME to analyze feature influence.
+6. **Branch Merge**:
+   - Merge `task-3` into `main` via PR.
+
+---
+
+## General Guidelines:
+- Maintain consistent and descriptive commit messages.
+- Use branches effectively to manage tasks.
+- Leverage GitHub PRs for merging completed tasks into the main branch.
+- Document insights and findings for all tasks in a clear and concise manner.
+- Ensure all work is reproducible and well-documented for future reference.
