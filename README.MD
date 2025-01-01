@@ -131,3 +131,14 @@ This README outlines the tasks for the week, along with their objectives, key pe
 - Leverage GitHub PRs for merging completed tasks into the main branch.
 - Document insights and findings for all tasks in a clear and concise manner.
 - Ensure all work is reproducible and well-documented for future reference.
+
+## Prerequisites
+
+1. Clone this repository:
+   ```bash
+   git clone <https://github.com/Semir1r/AlphaCare-Insurance-Solutions.git>
+   cd <AlphaCare-Insurance-Solutions>
+   
+2. **Install the required dependencies**
+   ```bash
+    pip install -r requirements.txt
